@@ -1,15 +1,19 @@
 import React from 'react';
 import './scss/switch/switch.scss';
-const Switch = ({rounded = false}) => {
-    return(
-    <div className="switch2">
-    <label className="switch">
-    <input type="checkbox"/>
-    <span className="slider rounded"/>
-    </label>
-    </div>
-    
-    );
-};
-
-export default Switch;
+class LightSwitch extends React.Component {
+  
+    state = {
+      active: false,
+    }
+    render() {
+      return (
+        <div>
+            <button 
+              className={ this.state.active ? "square switch-on" : "square switch-off" } onMouseLeave={ this.state.active ? "square switch-on" : "square switch-off" }
+              onClick={() => this.setState({active: !this.state.active})} >Download now
+            </button>
+          </div>
+      );
+    }
+  }
+export default LightSwitch;

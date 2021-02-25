@@ -39,6 +39,7 @@ body {
   font-weight: normal;
   font-size: 23px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .banner-bottom{
   text-align: center;
@@ -53,26 +54,6 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-.banner-para button{
-  width: 356px;
-  height: 83px;
-  background: linear-gradient(92.98deg, rgba(247, 247, 247, 0.12) 6.32%, rgba(235, 235, 235, 0) 101.07%);
-  border-radius: 19px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  border:none;
-  outline: none;
-  color: #FF7C03;
-  transition: 0.5s ease;
-  margin-top: 30px;
-  cursor: pointer;
-}
-.banner-para button:hover{
-  background: linear-gradient(92.98deg, rgba(247, 247, 247, 0.21) 6.32%, rgba(235, 235, 235, 0.05) 101.07%);
-}
-
 /*====page2======*/
 
 .pageback{
@@ -101,6 +82,7 @@ body {
   color: #FFFFFF;
   width:auto;
   position: relative;
+  cursor: pointer;
 }
 .b2-colors h1:hover{
   color: #FF7C03;
@@ -138,6 +120,7 @@ body {
   font-size: 30px;
   line-height: 37px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .b2-angles h1:hover{
   color: #FF7C03;
@@ -271,25 +254,12 @@ body {
 .p1 img{
   width:83px;
   height:83px;
+  cursor: pointer;
 }
 .p2 img{
   width:93px;
   height:81px;
-}
-.page4 button{
-  width: 356px;
-  height: 83px;
-  background: transparent;
-  border-radius: 19px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  border:none;
-  outline: none;
-  color: #FF7C03;
-  transition: 0.5s ease;
-  margin-top: 48px;
+  cursor: pointer;
 }
 /*====page5======*/
 
@@ -346,6 +316,7 @@ body {
   font-size: 32px;
   column-gap: 57px;
   color: white;
+  cursor: pointer;
 }
 .fend{
   width: 100%;
@@ -359,6 +330,7 @@ body {
   text-align: center;
   color: #F5F5F5;
   margin: 38px 0;
+  cursor: pointer;
 }
 .page5 form span{
   cursor: pointer;
@@ -548,7 +520,7 @@ body {
     font-size: 15px;
   }
   .banner2-top{
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .b2-colors h1{
     font-size: 20px;
@@ -642,11 +614,10 @@ body {
   .footer{
     max-width: 250px;
     margin: auto;
-    margin-top: 160px;
+    margin-top: 140px;
     display: flex;
     justify-content: space-around;
     column-gap: 30px;
-    border:1px solid white;
   }
   .footer .fi{
     margin: auto;
@@ -656,9 +627,16 @@ body {
   }
   .fend p{
     font-size: 18px;
+    margin: 15px 0;
   }
 }
-@media(max-width:555px){
+@media(max-width:560px){
+  .banner-para p{
+    font-size: 20px;
+  }
+}
+
+@media(max-width:505px){
   .banner-para p{
     font-size: 20px;
     line-height: 50px;
@@ -684,10 +662,10 @@ body {
     cursor: pointer;
     position:relative;
     bottom: 255px;
-    left:150px;
+  left:10px;
   }
   .page3{
-    margin-top: 80px;
+    margin-top: 40px;
   }
   .p3icons h1{
     margin:0 0 80px 0;
@@ -703,11 +681,15 @@ body {
   .page4 button{
     margin-top: 10px;
   }
-  .page5 form{ 
-    left:0%;
-  }
   .page5 form textarea{
     font-size: 20px;
+    height:150px;
+  }
+  .page5 form span{
+    cursor: pointer;
+    position:relative;
+    bottom: 190px;
+    left:150px;
   }
 }
 @media(max-width:470px){
@@ -736,12 +718,17 @@ body {
     margin-left:20px;
   }
 }
-@media(max-width:434px){
+@media(max-width:455px){
   .container{
     max-width:calc(100% - 15%);
   }
   .itemimg{
     margin-bottom: 20px;
+  }
+}
+@media(max-width:414px){
+  .banner-para p{
+    font-size: 18px;
   }
 }
 @media(max-width:397px){

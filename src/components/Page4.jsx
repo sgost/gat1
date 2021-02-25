@@ -1,5 +1,5 @@
 import React from 'react';
-
+import LightSwitch from './Switch';
 function Page4(){
     return(
         <div className="pageback2">
@@ -15,7 +15,7 @@ function Page4(){
             <img src="https://i.ibb.co/n6Vwfbp/logos-google-drive.png" alt=""/>
             </div>
         </div>
-        <button>Download now</button>
+        <LightSwitch/>
         </div>
         </div>
         </div>
